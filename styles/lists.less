@@ -21,15 +21,15 @@
   .generate-list-item-text-color(error);
   .generate-list-item-text-color(selected);
 
-  .generate-list-item-status-color(@color, @status) {
+  .generate-list-item-status-color(@sakura-pink, @status) {
     li:not(.list-nested-item).status-@{status},
     li.list-nested-item.status-@{status} > .list-item {
-      color: @color;
+      color: @sakura-pink;
     }
 
     li:not(.list-nested-item).selected.status-@{status},
     li.list-nested-item.selected.status-@{status} > .list-item {
-      color: darken(@color, 7%);
+      color: darken(@sakura-pink, 7%);
     }
   }
   .generate-list-item-status-color(@text-color-subtle, ignored);
